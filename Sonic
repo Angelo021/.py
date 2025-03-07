@@ -1,0 +1,40 @@
+class Personagem:
+    def __init__(self, idade, cor, nome, altura):
+        self.idade = idade
+        self.cor = cor
+        self.nome = nome
+        self.altura = altura
+
+class Sonic:
+    def __init__(self, idade, cor, nome, altura):
+        self.idade = idade
+        self.cor = cor
+        self.nome = nome
+        self.altura = altura
+
+    @classmethod
+    
+    def abaixar(self, idade, cor, nome, altura, abaixar):
+        super().__init__(abaixar)
+        nome = str(input("Digite o nome"))
+        return(f"O Sonic de nome {self.nome} e da cor {self.cor} esta abaixado!")
+    
+    def pular(self, idade, cor, nome, altura, pular):
+        super().__init__(pular)
+        nome = str(input("Digite o nome"))
+        return(f"O Sonic de nome {self.nome} e da cor {self.cor} esta pulando!")
+    
+    def correr(self, idade, cor, nome, altura, correr):
+        super().__init__(correr)
+        nome = str(input("Digite o nome"))
+        return(f"O Sonic de nome {self.nome} e da cor {self.cor} esta correndo!")
+    
+    def rolar(self, idade, cor, nome, altura, rolar):
+        super().__init__(rolar)
+        nome = str(input("Digite o nome"))
+        return(f"O Sonic de nome {self.nome} e da cor {self.cor} esta rolando!")
+    
+
+Personagem1 = Personagem("Sonic", 30, "Azul", 1.60)
+
+
